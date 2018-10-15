@@ -1,15 +1,3 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
-
-
-
-
-/*-- Reset-Code --*/
 
 body {
 	padding: 0;
@@ -749,7 +737,7 @@ h4.modal-title {
 
 .wthreelocationsaits .content > div.show {
 	height: auto;
-	opacity: 1;	
+	opacity: 1;
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
 }
@@ -1084,7 +1072,7 @@ a.popup-with-zoom-anim:hover {
 
 	.payment-online-form-left input[type="text"]:active, .payment-online-form-left input[type="text"]:hover {
 		border-color: #54CEB7;
-		color: #3498DB; 
+		color: #3498DB;
 	}
 
 	.shipping {
@@ -2612,7 +2600,7 @@ address {
 	}
 	.agilegrid h4 {
 		margin: 20px 0;
-	}	
+	}
 	.agilepackagesw3l h5 {
 		font-size: 35px;
 		margin-bottom: 20px;
