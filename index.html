@@ -281,26 +281,33 @@
 	<div id="popup">
 		<div id="small-dialog" class="mfp-hide agileinfo">
 			<div class="pop_up">
-				<div class="container">
-					<h3>Contact</h3>
-					<form action="#" method="post">
-						<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-1">
-							<input type="text" Name="First Name" placeholder="FIRST NAME" required="">
-							<input type="text" Name="Last Name" placeholder="LAST NAME" required="">
-							<input type="email" Name="Email" placeholder="EMAIL" required="">
-						</div>
-						<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-2">
-							<textarea name="Message" placeholder="MESSAGE" required=""></textarea>
-							<div class="send-button">
-								<input type="submit" value="SEND">
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</form>
-				</div>
-			</div>
 
-									<div class="clear agile"></div>
+
+				<form action="action_page.php">
+
+	    <label for="fname">First Name</label>
+	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+	    <label for="lname">Last Name</label>
+	    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+	    <label for="country">Country</label>
+	    <select id="country" name="country">
+	      <option value="australia">Australia</option>
+	      <option value="canada">Canada</option>
+	      <option value="usa">USA</option>
+	    </select>
+
+	    <label for="subject">Subject</label>
+	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	    <input type="submit" value="Submit">
+
+	  </form>
+	</div>
+
+
+						<div class="clear agile"></div>
 					</form>
 				</div>
 			</div>
