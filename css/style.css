@@ -82,13 +82,13 @@ a:focus, a:hover {
 
 
 
-/*-- Header --*/
+/*-- The Header --*/
 
 .agileheader {
 	position: relative;
 }
 
-	/*-- Navbar --*/
+	/*-- This part cover all the NavBar content  --*/
 
 	.navbar-default {
 		background: none;
@@ -109,9 +109,9 @@ a:focus, a:hover {
 		float: none;
 	}
 
-	/*-- //Navbar --*/
+	/*-- //The end of the NavBar --*/
 
-	/*-- Logo --*/
+	/*-- The top middle Logo --*/
 
 	.w3_navigation_pos {
 		position: absolute;
