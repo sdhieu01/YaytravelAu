@@ -115,16 +115,16 @@ a:focus, a:hover {
 
 	.w3_navigation_pos {
 		position: absolute;
-		top: 30%;
+		top: 50%;
 		left: 0;
 		right: 0;
 		text-align: center;
-		width: 50%;
+		width: 100%;
 		margin: 0 auto;
 	}
 
 	.w3_navigation_pos img {
-		width: 100px;
+		width: 200px;
 	}
 
 	.w3_navigation_pos h1 {
