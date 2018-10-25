@@ -119,12 +119,12 @@ a:focus, a:hover {
 		left: 0;
 		right: 0;
 		text-align: center;
-		width: 100%;
+		width: 50%;
 		margin: 0 auto;
 	}
 
 	.w3_navigation_pos img {
-		width: 200px;
+		width: 100px;
 	}
 
 	.w3_navigation_pos h1 {
