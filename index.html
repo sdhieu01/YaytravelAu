@@ -394,6 +394,70 @@
 
 
 
+	<!-- Custom-JavaScript-File-Links -->
+
+	<!-- Default-JavaScript -->   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="js/bootstrap.js"></script>
+
+<!-- Responsive-Slider-JavaScript -->
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+					$("#slider").responsiveSlides({
+						auto: true,
+						nav: true,
+						speed: 2000,
+						namespace: "callbacks",
+						pager: true,
+					});
+				});
+			</script>
+		<!-- //Responsive-Slider-JavaScript -->
+
+
+
+
+		<!-- Owl-Carousel-JavaScript -->
+			<script src="js/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo, #owl-demo1, #owl-demo2, #owl-demo3, #owl-demo4").owlCarousel({
+						autoPlay: 4000,
+						items : 3,
+						itemsDesktop : [568,2],
+						itemsDesktopSmall : [414,1]
+					});
+				});
+			</script>
+		<!-- //Owl-Carousel-JavaScript -->
+
+		
+		<!-- Smooth-Scrolling-JavaScript -->
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+		<!-- //Smooth-Scrolling-JavaScript -->
+
+		<!-- Slide-To-Top JavaScript -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					var defaults = {
+						containerID: 'toTop',
+						containerHoverID: 'toTopHover',
+						scrollSpeed: 100,
+						easingType: 'linear',
+					};
+				});
+			</script>
+			<a href="#agileitshome" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+		<!-- //Slide-To-Top JavaScript -->
+
+	<!-- //Custom-JavaScript-File-Links -->
 
 </body>
 <!-- //Body -->
