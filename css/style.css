@@ -2066,65 +2066,60 @@ li.agiletravelerw3ls p {
 
 /*-- Contact --*/
 
-#mainform{
-    width:960px;
-    margin:20px auto;
-    padding-top:20px;
-    font-family: 'Fauna One', serif;
-}
-#form{
-    border-radius:2px;
-    padding:20px 30px;
-    box-shadow:0 0 15px;
-    font-size:14px;
-    font-weight:bold;
-    width:350px;
-    margin:20px 250px 0 35px;
-    float:left;
-
-}
-h3{
-    text-align:center;
-    font-size:20px;
+.agilecontactw3ls {
+	background-image: url("../images/contact.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
 }
 
-input{
-    width:100%;
-    height:35px;
-    margin-top:5px;
-    border:1px solid #999;
-    border-radius:3px;
-    padding:5px;
+.agilecontactw3ls-grid input[type="text"], .agilecontactw3ls-grid input[type="email"], .agilecontactw3ls-grid textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #FFF;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	border-left: 5px solid #FFF;
+	border-radius: 0;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
 }
 
-input[type=button]{
-    background-color:#123456;
-    border:1px solid white;
-    font-family: 'Fauna One', serif;
-    font-Weight:bold;
-    font-size:18px;
-    color:white;
+.agilecontactw3ls-grid input[type="email"], .agilecontactw3ls-grid textarea {
+	margin-bottom: 0;
 }
-textarea{
-    width:100%;
-    height:80px;
-    margin-top:5px;
-    border-radius:3px;
-    padding:5px;
-    resize:none;
+
+.agilecontactw3ls-grid textarea {
+	height: 160px;
 }
-span{
-    color:red
+
+.agilecontactw3ls-grid .send-button {
+	margin-top: 5px;
 }
-#note{
-color:black;
-font-Weight:400;
+
+.agilecontactw3ls input[type="submit"] {
+	padding: 4px 40px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FFF;
+	color: #000;
+	border: 5px solid transparent;
+	font-size: 16px;
+	float: right;
 }
-#returnmessage{
-    font-size:14px;
-    color:green;
-    text-align:center;
+
+.agilecontactw3ls input[type="submit"]:hover {
+	background-color: transparent;
+	border-color: #FFF;
+	color: #FFF;
 }
+
 /*-- //Contact --*/
 
 
