@@ -11,7 +11,7 @@ require_once './vendor/autoload.php';
 use FormGuide\Handlx\FormHandler;
 
 
-$pp = new FormHandler(); 
+$pp = new FormHandler();
 
 $validator = $pp->getValidator();
 $validator->fields(['firstname','lastname', 'email','phone'])->areRequired()->maxLength(50);
