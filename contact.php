@@ -1,6 +1,6 @@
 <?php
 $from = '';
-$sendTo = 'email@email.com';
+$sendTo = 'Stepheng2013@email.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message');
 
