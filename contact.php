@@ -1,3 +1,4 @@
+<?php
 $from = '';
 $sendTo = 'email@email.com';
 $subject = 'New message from contact form';
