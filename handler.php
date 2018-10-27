@@ -21,6 +21,6 @@ $validator->field('message')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('someone@gmail.com'); // ← Your email here
+$pp->sendEmailTo('Stepheng2013@hotmail.com'); // ← Your email here
 
 echo $pp->process($_POST);Copy
