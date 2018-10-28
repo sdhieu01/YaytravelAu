@@ -130,25 +130,56 @@
 
 
 	<!-- Contact -->
-	<div class="agilecontactw3ls" id="agilecontactw3ls">
-		<div class="container">
-			<h3>Contact</h3>
-			<form action="#" method="post">
-				<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-1">
-					<input type="text" Name="First Name" placeholder="FIRST NAME" required="">
-					<input type="text" Name="Last Name" placeholder="LAST NAME" required="">
-					<input type="email" Name="Email" placeholder="EMAIL" required="">
-				</div>
-				<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-2">
-					<textarea name="Message" placeholder="MESSAGE" required=""></textarea>
-					<div class="send-button">
-						<input type="submit" value="SEND">
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</form>
-		</div>
-	</div>
+	<div class="container">
+ <div class="row">
+  <div class="col-xl-8 offset-xl-2">
+   <h1>CONTACT FORM</h1><hr>
+   <p class="lead">By filling out the contact form; You may have information about us and current news.</p>
+   <form id="contact-form" method="post" action="contact.php" role="form" novalidate="true">
+   <div class="messages"></div>
+   <div class="controls">
+    <div class="row">
+     <div class="col-lg-6">
+      <div class="form-group">
+        <label for="form_name">Full Name *</label>
+        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please fill the name field *" required="required" data-error="You must fill the name field">
+        <div class="help-block with-errors alert-danger"></div>
+       </div>
+      </div>
+      <div class="col-lg-6"></div>
+    </div>
+    <div class="row">
+     <div class="col-lg-6">
+      <div class="form-group">
+       <label for="form_email">E-mail *</label>
+       <input id="form_email" type="email" name="email" class="form-control" placeholder="Please fill the email field *" required="required" data-error="You must fill the email field">
+        <div class="help-block with-errors alert-danger"></div>
+       </div>
+      </div>
+      <div class="col-lg-6"></div>
+    </div>
+    <div class="row">
+     <div class="col-lg-6">
+      <div class="form-group">
+       <label for="form_subject">Subject *</label>
+       <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Please fill the subject field *" required="required" data-error="You must fill the subject field">
+        <div class="help-block with-errors alert-danger"></div>
+       </div>
+      </div>
+      <div class="col-lg-6"></div>
+     </div>
+     <div class="form-group">
+      <label for="form_message">Message *</label>
+      <textarea id="form_message" name="message" class="form-control" placeholder="Please fill the message field *" rows="4" required="required" data-error="You must fill the message field"></textarea>
+       <div class="help-block with-errors alert-danger"></div>
+      </div>
+      <input type="submit" class="btn btn-success btn-send" value="Submit">
+      <p class="text-muted" style="padding-top: 5px;"><strong>*</strong>This field must be fill.</p>
+      </div><!-- controls all end -->
+     </form><!-- form all end -->
+    </div><!-- col-xl-8 offset-xl-2 end -->
+   </div><!-- row all end -->
+ </div><!-- container all end -->
 	<!-- //Contact -->
 
 
