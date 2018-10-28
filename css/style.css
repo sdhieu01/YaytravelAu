@@ -1186,9 +1186,84 @@ a.popup-with-zoom-anim:hover {
 		margin-right: 8px;
 	}
 
+	input[type=checkbox].css-checkbox1:checked + label.css-label1 {
+		background: url("../images/icon.png") no-repeat -215px -25px;
+	}
 
+	input[type=checkbox].css-checkbox2 + label.css-label2 {
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		line-height: 18px;
+		background-repeat: no-repeat;
+		background-position: -20px 0px;
+		vertical-align: super;
+		cursor: pointer;
+		/*-- w3layouts --*/
+		/*-- agileits --*/
+		background: url("../images/icon.png") no-repeat -218px -24px;
+	}
 
+	input[type=checkbox].css-checkbox2:checked + label.css-label2 {
+		background: url("../images/icon.png") no-repeat -190px -24px;
+	}
 
+	.visa {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background: url("../images/icon.png") no-repeat -32px -28px;
+	}
+
+	.paypal {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background: url("../images/icon.png") no-repeat -71px -26px;
+	}
+
+	.payment-online-form-right {
+		float: right;
+		width: 30%;
+		background: #2B2937;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-o-border-radius: 5px;
+		/*-- w3layouts --*/
+		/*-- agileits --*/
+		border-radius: 5px;
+		border-bottom: 4px solid #1A1822;
+		padding-bottom: 2em;
+	}
+
+	.payment-online-form-right a:hover {
+		color: #1ABC9C;
+	}
+	.payment-online-form-right ul li {
+		display: block;
+		padding: 0.5em;
+	}
+	.payment-online-form-right ul li a {
+		color: #9095AA;
+	}
+
+	.payment-online-form-left h4 {
+		text-align: left;
+		color: #FFF;
+	}
+
+	.payment-online-form-right ul {
+		padding: 0px 1em;
+	}
+
+	h4.paymenthead {
+		margin-top: 140px;
+	}
+
+	.payment-type {
+		margin-top: 3%;
+		text-align: left;
+	}
 
 	input[type=checkbox].css-checkbox3, input[type=checkbox].css-checkbox4, input[type=checkbox].css-checkbox5, input[type=checkbox].css-checkbox6 {
 		display: none;
@@ -1438,8 +1513,14 @@ a.popup-with-zoom-anim:hover {
 		outline: none;
 	}
 
+	.mfp-close:hover, .mfp-close:focus {
+		opacity: 1;
+	}
 
-
+	.mfp-close-btn-in .mfp-close {
+		color: #333333;
+		padding: 0;
+	}
 
 	.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 		color: white;
@@ -3438,7 +3519,7 @@ address {
 }
 
 
-/* Contact Form Styles */
+/* Popup Contact Form Styles */
 h1 {
    margin: 10px 0 0 0;
 }
@@ -3523,7 +3604,7 @@ input:required, textarea:required {
 }
 
 /* Hide success/failure message
-   (especially since the php is missing) */
+    */
 #failure, #success {
    color: #6EA070;
    display:none;
@@ -3541,6 +3622,7 @@ input:required, textarea:required {
    }
 }
 
+/* //Popup Contact Form Styles */
 
 
 /*-- //Responsive-Code --*/
