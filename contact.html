@@ -130,14 +130,25 @@
 
 
 	<!-- Contact -->
- <p> Enquire <p>
-	 <form class="contact-form" action="contactform.php" method="post">
-	 <input type="text" name="name" paceholder="Full name">
-	 <input type="text" name="mail" paceholder="Your e-mail">
-  	<input type="text" name="Subject" paceholder="Subject">
-		<textarea name="message" plcae="Message"></textarea>
-		<button type="submit" name="submit">Send Mail></button>
-	</form>
+	<div class="agilecontactw3ls" id="agilecontactw3ls">
+		<div class="container">
+			<h3>Contact</h3>
+			<form action="contact.php" method="post">
+				<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-1">
+					<input type="text" Name="First Name" placeholder="FIRST NAME" required="">
+					<input type="text" Name="Last Name" placeholder="LAST NAME" required="">
+					<input type="email" Name="Email" placeholder="EMAIL" required="">
+				</div>
+				<div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-2">
+					<textarea name="Message" placeholder="MESSAGE" required=""></textarea>
+					<div class="send-button">
+						<input type="submit" value="SEND">
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+	</div>
 	<!-- //Contact -->
 
 
