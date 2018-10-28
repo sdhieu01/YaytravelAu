@@ -3507,6 +3507,18 @@ address {
 }
 
 
+* {
+   box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-font-smoothing:antialiased;
+   -moz-font-smoothing:antialiased;
+   -o-font-smoothing:antialiased;
+   font-smoothing:antialiased;
+   text-rendering:optimizeLegibility;
+}
+
+
 /* Contact Form Styles */
 h1 {
    margin: 10px 0 0 0;
