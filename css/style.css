@@ -2124,14 +2124,6 @@ li.agiletravelerytls p {
 
 
 
-/*-- Map --*/
-
-#map {
-	width: 100%;
-	height: 500px;
-}
-
-/*-- //Map --*/
 
 
 
@@ -2527,9 +2519,6 @@ address {
 	.wthreeratingaits ul li {
 		font-size: 20px;
 	}
-	#map {
-		height: 400px;
-	}
 	.agilefooterwthree-grid2 .email {
 		width: 100%;
 	}
@@ -2626,9 +2615,6 @@ address {
 		width: 50%;
 		float: left;
 		padding: 0 5px;
-	}
-	#map {
-		height: 350px;
 	}
 	.agilesocialwthree ul.social-icons li {
 		width: 13.98%;
@@ -2880,9 +2866,6 @@ address {
 	.cd-images-list h3 {
 		font-size: 24px;
 	}
-	#map {
-		height: 300px;
-	}
 	.agilesocialwthree ul.social-icons li {
 		width: 13.85%;
 	}
@@ -3001,11 +2984,6 @@ address {
 	.cd-images-list h3 {
 		font-size: 22px;
 	}
-	#map {
-		height: 250px;
-	}
-}
-
 @media screen and (max-width: 667px) {
 	.nav > li {
 		padding: 14px 6.2px 7px;
@@ -3233,9 +3211,6 @@ address {
 		padding: 2px 30px;
 		border: 3px solid transparent;
 		font-size: 15px;
-	}
-	#map {
-		height: 200px;
 	}
 	.agilesocialwthree ul.social-icons li {
 		width: 13.74%;
