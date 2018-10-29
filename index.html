@@ -127,143 +127,19 @@
 
 	</div>
 	<!-- //Header -->
-	<!-- Packages -->
-	<div class="agilepackagesytl" id="agilepackagesytl">
-		<div class="container">
 
-			<h3>Top Destinations</h3>
-
-			<div id="owl-demo" class="owl-carousel text-center">
-				<div class="item yt-agile">
-					<div class="agilegrid agilegrid1">
-						<img src="images/Canberra.jpg" alt="YAYTRAV">
-						<h4>DIVE INTO THE FUN</h4>
-						<h5>$448</h5>
-						<ul>
-							<li>SkyDive Canberra</li>
-							<li>Ages 12+</li>
-							<li>Embrace the fear</li>
-							<li>Soak up the sites</li>
-						</ul>
-						<div class="sign yt-agile text-center">
-							<a class="popup-with-zoom-anim" href="#small-dialog">INQUIRE</a>
-						</div>
-					</div>
-				</div>
-				<div class="item yt-agile">
-					<div class="agilegrid agilegrid2">
-						<img src="images/Canberra2.jpg" alt="YAYTRAV">
-						<h4>Avenue Hotel</h4>
-						<h5>$562</h5>
-						<ul>
-							<li>Special Packages Includes</li>
-							<li>5 Days, 4 Nights</li>
-							<li>A luxury stay in the heart of Braddon</li>
-							<li>Stay for up to 5 people</li>
-						</ul>
-						<div class="sign yt-agile text-center">
-							<a class="popup-with-zoom-anim" href="#small-dialog">INQUIRE</a>
-						</div>
-					</div>
-				</div>
-				<div class="item yt-agile">
-					<div class="agilegrid agilegrid7">
-						<img src="images/Canberra3.jpg" alt="YAYTRAV">
-						<h4>Hotel Realm</h4>
-						<h5>$358</h5>
-						<ul>
-							<li>VIP Available</li>
-							<li>4.4 of 5 guest rating</li>
-							<li> Weeding Packages Available</li>
-							<li> Free Wifi</li>
-						</ul>
-						<div class="sign yt-agile text-center">
-							<a class="popup-with-zoom-anim" href="#small-dialog">INQUIRE</a>
-						</div>
-					</div>
-				</div>
-				<div class="item yt-agile">
-					<div class="agilegrid agilegrid8">
-						<img src="images/Canberra4.jpg" alt="YAYTRAV">
-						<h4> MANHATTAN ON THE PARK</h4>
-						<h5>$270</h5>
-						<ul>
-							<li>Luxury Travel</li>
-							<li>9 Days, 9 Nights</li>
-							<li> 2 bedroom, 2 bathroom apartment </li>
-							<li>5 star hotel</li>
-						</ul>
-						<div class="sign yt-agile text-center">
-							<a class="popup-with-zoom-anim" href="#small-dialog">INQUIRE</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Popup-Box -->
-			<div id="popup">
-				<div id="small-dialog" class="mfp-hide agileinfo">
-					<div class="pop_up">
-
-
-						<div id="contact-form">
-		<div>
-			<h1>Nice to Meet You!</h1>
-
-			<h4>Have a question or just want to get in touch? Let's chat.</h4>
-		</div>
-
-			   <form method="post" action="popup.php">
-				<div>
-			      <label for="name">
-			      	<span class="required">Name: *</span>
-			      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-			      </label>
-				</div>
-				<div>
-			      <label for="email">
-			      	<span class="required">Email: *</span>
-			      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-			      </label>
-				</div>
-				<div>
-			      <label for="subject">
-			      <span>Subject: </span>
-				      <select id="subject" name="subject" tabindex="4">
-				         <option value="hello">Holiday booking</option>
-				         <option value="quote">Holiday question</option>
-				         <option value="general">Issue </option>
-				      </select>
-			      </label>
-				</div>
-				<div>
-			      <label for="message">
-			      	<span class="required">Message: *</span>
-			      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
-			      </label>
-				</div>
-				<div>
-			      <button name="submit" type="submit" id="submit" >SEND</button>
-				</div>
-			   </form>
-
-		</div>
-
-
-								<div class="clear agile"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button title="Close (Esc)" type="button" class="mfp-close yt-tagtag">×</button>
-			<!-- //Popup-Box -->
-
-		</div>
-	</div>
-	<!-- //Packages -->
-
-
+<!-- Search Bar -->
+<form>
+	<select  name="users-out" id="students-out"  multiple="multiple" size="10">
+                <option value="4" title="Mr. Student Account">Mr. Student Account</option>
+                 <option value="28" title="Mr JJ DD">Mr JJ DD</option>
+                 <option value="32" title="Dr Jack Doe">Dr Jack Doe</option>
+                  <option value="26" title="Dr Jack Doe1">Dr Jack Doe1</option>
+                  <option value="30" title="Dr Jane Doe2">Dr Jane Doe2</option>
+								</select>  	<br />
+								Search<input type="text"  id="search" onkeyup="searchstudent()"/>
+</form>
+<!-- //Search -->
 
 
 
@@ -453,6 +329,24 @@
 			</script>
 			<a href="#tagtaghome" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
 		<!-- //Slide-To-Top JavaScript -->
+
+
+
+		<script type="text/javascript">
+		function searchstudent(){
+	             var searchvalue= document.getElementById('search').value;
+	             var from_s = document.getElementById('students-out');
+	             for (var i=0;i<from_s.options.length-1;i++) {
+	                var st=from_s.options[i].text;
+	                  if(st.search(searchvalue)>-1) {
+	                  var temp  = from_s.options[i];
+	                 from_s.add(temp, from_s.options[0]);
+	                 }
+	             }
+	          }
+
+		</script>
+
 
 	<!-- //Custom-JavaScript-File-Links -->
 
