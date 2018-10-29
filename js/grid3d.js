@@ -1,17 +1,8 @@
-/**
- * grid3d.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
+
 ;( function( window ) {
-	
+
 	'use strict';
-	
+
 	function grid3D( el, options ) {
 		this.el = el;
 		this.options = extend( {}, this.options );
@@ -19,7 +10,7 @@
   		this._init();
 	}
 
-	// any options you might want to configure
+
 	grid3D.prototype.options = {};
 
 	grid3D.prototype._init = function() {
@@ -47,7 +38,7 @@
 
 	grid3D.prototype._initEvents = function() {
 		var self = this;
-		
+
 		// open the content element when clicking on the main grid items
 		this.gridItems.forEach( function( item, idx ) {
 			item.addEventListener( 'click', function() {
@@ -64,15 +55,14 @@
 			// window resize
 			window.addEventListener( 'resize', function() { self._resizeHandler(); } );
 
-			// trick to prevent scrolling when animation is running (opening only)
-			// this prevents that the back of the placeholder does not stay positioned in a wrong way
+
 			window.addEventListener( 'scroll', function() {
 				if ( self.isAnimating ) {
 					window.scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
 				}
 				else {
 					self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-					// change the grid perspective origin as we scroll the page
+
 					self._scrollHandler();
 				}
 			});
@@ -105,7 +95,7 @@
 				self.isAnimating = false;
 			};
 
-		// if no support just load the content (simple fallback - no animation at all)
+		// if no support just load the content
 		if( !this.support ) {
 			loadContent();
 			return false;
@@ -113,14 +103,14 @@
 
 		var currentItem = this.gridItems[ pos ],
 			itemContent = currentItem.innerHTML;
-		
+
 		// create the placeholder
 		this.placeholder = this._createPlaceholder(itemContent );
-		
-		// set the top and left of the placeholder to the top and left of the clicked grid item (relative to the grid)
+
+
 		this.placeholder.style.left = currentItem.offsetLeft + 'px';
 		this.placeholder.style.top = currentItem.offsetTop + 'px';
-		
+
 		// append placeholder to the grid
 		this.grid.appendChild( this.placeholder );
 
@@ -147,7 +137,7 @@
 		var self = this,
 			contentItem = this.el.querySelector( 'div.content > .show' ),
 			currentItem = this.gridItems[ this.contentItems.indexOf( contentItem ) ];
-		
+
 		classie.removeClass( contentItem, 'show' );
 		classie.removeClass( this.contentEl, 'show' );
 		// without the timeout there seems to be some problem in firefox
@@ -229,9 +219,9 @@
 		this.itemSize = { width : this.gridItems[0].offsetWidth, height : this.gridItems[0].offsetHeight };
 		if( this.placeholder ) {
 			// set the placeholders top to "0 - grid offsetTop" and left to "0 - grid offsetLeft"
-			
+
 			var gridOffset = getOffset( this.grid );
-			
+
 			this.placeholder.style.left = Number( -1 * ( gridOffset.left - scrollX() ) ) + 'px';
 			this.placeholder.style.top = Number( -1 * ( gridOffset.top - scrollY() ) ) + 'px';
 			// set the placeholders width to windows width and height to windows height

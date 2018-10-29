@@ -1,16 +1,4 @@
-/*
- *  jQuery OwlCarousel v1.3.3
- *
- *  Copyright (c) 2013 Bartosz Wojciechowski
- *  http://www.owlgraphic.com/owlcarousel/
- *
- *  Licensed under MIT
- *
- */
 
-/*JS Lint helpers: */
-/*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
-/*jslint nomen: true, continue:true */
 
 if (typeof Object.create !== "function") {
     Object.create = function (obj) {
@@ -1201,7 +1189,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($lazyImg.get(0)) || isBackgroundImg === true) {
                     showImage();
-                } else if (iterations <= 100) {//if image loads in less than 10 seconds 
+                } else if (iterations <= 100) {//if image loads in less than 10 seconds
                     window.setTimeout(checkLazyImage, 100);
                 } else {
                     showImage();
@@ -1230,7 +1218,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($currentimg.get(0))) {
                     addHeight();
-                } else if (iterations <= 100) { //if image loads in less than 10 seconds 
+                } else if (iterations <= 100) { //if image loads in less than 10 seconds
                     window.setTimeout(checkImage, 100);
                 } else {
                     base.wrapperOuter.css("height", ""); //Else remove height attribute
@@ -1457,11 +1445,11 @@ if (typeof Object.create !== "function") {
     $.fn.owlCarousel.options = {
 
         items : 5,
-        itemsCustom : false, 
+        itemsCustom : false,
 		itemsDesktop : [1080, 4],
-        itemsTablet : [991, 3], 
-		itemsTabletSmall : [480, 2],	
-        itemsMobile : [414, 1], 
+        itemsTablet : [991, 3],
+		itemsTabletSmall : [480, 2],
+        itemsMobile : [414, 1],
         singleItem : false,
         itemsScaleUp : false,
 
