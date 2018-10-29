@@ -283,28 +283,49 @@
 			<div class="pop_up">
 
 
-				<form action="action_page.php">
+				<div id="contact-form">
+<div>
+	<h1>Nice to Meet You!</h1>
+	<h4>Have a question or just want to get in touch? Let's chat.</h4>
+</div>
+	<p id="failure">Oopsie...message not sent.</p>
+	<p id="success">Your message was sent successfully. Thank you!</p>
 
-	    <label for="fname">First Name</label>
-	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		 <form method="post" action="popup.php">
+		<div>
+				<label for="name">
+					<span class="required">Name: *</span>
+					<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+				</label>
+		</div>
+		<div>
+				<label for="email">
+					<span class="required">Email: *</span>
+					<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+				</label>
+		</div>
+		<div>
+				<label for="subject">
+				<span>Subject: </span>
+					<select id="subject" name="subject" tabindex="4">
+						 <option value="hello">Product Price Question</option>
+						 <option value="quote">Where are my dragons?!</option>
+						 <option value="general">- Valar Morghulis - </option>
+					</select>
+				</label>
+		</div>
+		<div>
+				<label for="message">
+					<span class="required">Message: *</span>
+					<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+				</label>
+		</div>
+		<div>
+				<button name="submit" type="submit" id="submit" >SEND</button>
+		</div>
+		 </form>
 
-	    <label for="lname">Last Name</label>
-	    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-	    <label for="country">Country</label>
-	    <select id="country" name="country">
-	      <option value="australia">Australia</option>
-	      <option value="canada">Canada</option>
-	      <option value="usa">USA</option>
-	    </select>
-
-	    <label for="subject">Subject</label>
-	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-	    <input type="submit" value="Submit">
-
-	  </form>
-	</div>
+</div>
 
 
 						<div class="clear agile"></div>
