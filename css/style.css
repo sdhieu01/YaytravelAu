@@ -3527,7 +3527,7 @@ h4{
    margin: 0 0 20px 0;
 }
 #contact-form {
-   background-color:##ADD8E6;
+   background-color:rgba(72,72,72,0.7);
    padding: 10px 20px 30px 20px;
    max-width:100%;
    float: left;
@@ -3604,7 +3604,7 @@ input:required, textarea:required {
 }
 
 /* Hide success/failure message
-    */
+   (especially since the php is missing) */
 #failure, #success {
    color: #6EA070;
    display:none;
