@@ -206,47 +206,53 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+			   <form method="post" action="/">
+				<div>
+			      <label for="name">
+			      	<span class="required">Name: *</span>
+			      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+			      </label>
+				</div>
+				<div>
+			      <label for="email">
+			      	<span class="required">Email: *</span>
+			      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+			      </label>
+				</div>
+				<div>
+			      <label for="subject">
+			      <span>Subject: </span>
+				      <select id="subject" name="subject" tabindex="4">
+				         <option value="hello">Product Price Question</option>
+				         <option value="quote">Where are my dragons?!</option>
+				         <option value="general">- Valar Morghulis - </option>
+				      </select>
+			      </label>
+				</div>
+				<div>
+			      <label for="message">
+			      	<span class="required">Message: *</span>
+			      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+			      </label>
+				</div>
+				<div>
+			      <button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+			   </form>
+
+		</div>
+
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -336,47 +342,53 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+				 <form method="post" action="/">
+				<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+				</div>
+				<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+				</div>
+				<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+				</div>
+				<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+				</div>
+				<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+				 </form>
+
+		</div>
+
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -467,47 +479,53 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+				 <form method="post" action="/">
+				<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+				</div>
+				<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+				</div>
+				<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+				</div>
+				<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+				</div>
+				<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+				 </form>
+
+		</div>
+
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -582,47 +600,52 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+				 <form method="post" action="/">
+				<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+				</div>
+				<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+				</div>
+				<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+				</div>
+				<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+				</div>
+				<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+				 </form>
+
+		</div>
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -697,47 +720,51 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+						<div id="contact-form">
+					<div>
+					<h1>Nice to Meet You!</h1>
+					<h4>Have a question or just want to get in touch? Let's chat.</h4>
+					</div>
+					<p id="failure">Oopsie...message not sent.</p>
+					<p id="success">Your message was sent successfully. Thank you!</p>
+
+					<form method="post" action="/">
+					<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+					</div>
+					<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+					</div>
+					<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+					</div>
+					<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+					</div>
+					</form>
+
+					</div>
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -812,47 +839,52 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+				 <form method="post" action="/">
+				<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+				</div>
+				<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+				</div>
+				<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+				</div>
+				<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+				</div>
+				<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+				 </form>
+
+		</div>
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
@@ -927,47 +959,52 @@
 			<div id="popup">
 				<div id="small-dialog" class="mfp-hide agileinfo">
 					<div class="pop_up">
-						<div class="payment-online-form-left yt-tagtag">
-							<form action="#" method="post">
-								<h4><span class="shipping tagtag-ytlayouts"></span>Customer Details</h4>
-								<ul>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-									<li><input class="text-box-dark tagtag" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark agile" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-									<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-								</ul>
-								<div class="clear"></div>
-								<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
-								<div class="clear"></div>
-								<ul class="payment-type">
-									<li><span class="col_checkbox tagtag-ytlayouts">
-											<input id="3" class="css-checkbox1" type="checkbox">
-											<label for="3" class="css-label1"></label>
-											<a class="visa tagtag-ytlayouts" href="#"></a>
-										</span>
-									</li>
-									<li>
-										<span class="col_checkbox">
-											<input id="4" class="css-checkbox2" type="checkbox">
-											<label for="4" class="css-label2"></label>
-											<a class="paypal yt-tagtag" href="#"></a>
-										</span>
-									</li>
-								</ul>
-								<ul>
-									<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
-									<li><input class="text-box-dark ytlayouts" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
-								</ul>
-								<ul>
-									<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
-									<li><input class="text-box-dark tagtag-ytlayouts" type="text" value="CVV" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'CVV';}"></li>
-								</ul>
-								<ul class="payment-sendbtns">
-									<li><input type="reset" value="Reset"></li>
-									<li><input type="submit" name="Process Order" value="Process Order"></li>
-								</ul>
+
+
+						<div id="contact-form">
+		<div>
+			<h1>Nice to Meet You!</h1>
+			<h4>Have a question or just want to get in touch? Let's chat.</h4>
+		</div>
+			<p id="failure">Oopsie...message not sent.</p>
+			<p id="success">Your message was sent successfully. Thank you!</p>
+
+				 <form method="post" action="/">
+				<div>
+						<label for="name">
+							<span class="required">Name: *</span>
+							<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+						</label>
+				</div>
+				<div>
+						<label for="email">
+							<span class="required">Email: *</span>
+							<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+						</label>
+				</div>
+				<div>
+						<label for="subject">
+						<span>Subject: </span>
+							<select id="subject" name="subject" tabindex="4">
+								 <option value="hello">Product Price Question</option>
+								 <option value="quote">Where are my dragons?!</option>
+								 <option value="general">- Valar Morghulis - </option>
+							</select>
+						</label>
+				</div>
+				<div>
+						<label for="message">
+							<span class="required">Message: *</span>
+							<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+						</label>
+				</div>
+				<div>
+						<button name="submit" type="submit" id="submit" >SEND</button>
+				</div>
+				 </form>
+
+		</div>
+
 								<div class="clear agile"></div>
 							</form>
 						</div>
