@@ -3596,7 +3596,8 @@ input:required, textarea:required {
       padding-right: 3%;
    }
 }
-
+p.big {
+    line-height: 1.8;
 /* //Popup Contact Form Styles */
 
 
