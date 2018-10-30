@@ -129,16 +129,16 @@
 	<!-- //Header -->
 
 <!-- Search Bar -->
-<form>
-	<select  name="users-out" id="students-out"  multiple="multiple" size="10">
-                <option value="4" title="Mr. Student Account">Mr. Student Account</option>
-                 <option value="28" title="Mr JJ DD">Mr JJ DD</option>
-                 <option value="32" title="Dr Jack Doe">Dr Jack Doe</option>
-                  <option value="26" title="Dr Jack Doe1">Dr Jack Doe1</option>
-                  <option value="30" title="Dr Jane Doe2">Dr Jane Doe2</option>
-								</select>  	<br />
-								Search<input type="text"  id="search" onkeyup="searchstudent()"/>
-</form>
+<div class="container" style="width:900px;">
+   <h2 align="center">JSON Live Data Search using Ajax JQuery</h2>
+   <h3 align="center">Employee Data</h3>
+   <br /><br />
+   <div align="center">
+    <input type="text" name="search" id="search" placeholder="Search Employee Details" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
+  </div>
 <!-- //Search -->
 
 
@@ -330,21 +330,31 @@
 			<a href="#tagtaghome" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
 		<!-- //Slide-To-Top JavaScript -->
 
+		<script>
+$(document).ready(function(){
+ $.ajaxSetup({ cache: false });
+ $('#search').keyup(function(){
+  $('#result').html('');
+  $('#state').val('');
+  var searchField = $('#search').val();
+  var expression = new RegExp(searchField, "i");
+  $.getJSON('data.json', function(data) {
+   $.each(data, function(key, value){
+    if (value.name.search(expression) != -1 || value.location.search(expression) != -1)
+    {
+     $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.name+' | <span class="text-muted">'+value.location+'</span></li>');
+    }
+   });
+  });
+ });
 
-
-		<script type="text/javascript">
-		function searchstudent(){
-	             var searchvalue= document.getElementById('search').value;
-	             var from_s = document.getElementById('students-out');
-	             for (var i=0;i<from_s.options.length-1;i++) {
-	                var st=from_s.options[i].text;
-	                  if(st.search(searchvalue)>-1) {
-	                  var temp  = from_s.options[i];
-	                 from_s.add(temp, from_s.options[0]);
-	                 }
-	             }
-	          }
-		</script>
+ $('#result').on('click', 'li', function() {
+  var click_text = $(this).text().split('|');
+  $('#search').val($.trim(click_text[0]));
+  $("#result").html('');
+ });
+});
+</script>
 
 
 	<!-- //Custom-JavaScript-File-Links -->
