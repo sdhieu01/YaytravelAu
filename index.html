@@ -340,6 +340,27 @@ Select location:
 			</script>
 			<a href="#tagtaghome" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
 		<!-- //Slide-To-Top JavaScript -->
+<script>
+		$(function(){
+		    var listWidget = $("#list").dxList({
+		        dataSource: products,
+		        height: 400,
+		        searchEnabled: true,
+		        searchExpr: "Name",
+		        itemTemplate: function(data) {
+		            return $("<div>").text(data.Name);
+		        }
+		    }).dxList("instance");
+
+		    $("#searchMode").dxSelectBox({
+		        dataSource: ["contains", "startswith"],
+		        value: "contains",
+		        onValueChanged: function(data) {
+		            listWidget.option("searchMode", data.value);
+		        }
+		    }).dxSelectBox("instance");
+		});
+		</script> 
 
 	<!-- //Custom-JavaScript-File-Links -->
 
